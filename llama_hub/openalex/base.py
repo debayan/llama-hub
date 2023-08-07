@@ -26,7 +26,7 @@ class OpenAlexAuthorsReader(BaseReader):
     def load_data(
         self,
         query,
-        limit=10,
+        limit=100,
         returned_fields=[
             "display_name",
             "last_known_institution",
@@ -71,7 +71,6 @@ class OpenAlexAuthorsReader(BaseReader):
         for item in results[:limit]:
             openalexauthorid = item["id"].split('/')[-1]
             display_name = item["display_name"]
-            print(item["last_known_institution"])
             last_known_institution = ''
             try:
                 last_known_institution = item["last_known_institution"]["display_name"]

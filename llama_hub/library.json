@@ -632,5 +632,16 @@
       "research",
       "paper"
     ]
+  },
+  "OpenAlex": {
+    "id": "openalex",
+    "author": "debayan",
+    "keywords": [
+      "openalex",
+      "scholar",
+      "research",
+      "paper"
+    ]
+
   }
 }
